@@ -494,6 +494,61 @@ body.no-scroll{overflow:hidden;}
   .tlWrap{ grid-template-columns: repeat(2, 1fr); }
   .tlPhotos{ grid-template-columns: repeat(2, 1fr); }
 }
+/* ===== MOBILE: Painel do Atleta ===== */
+@media (max-width: 600px){
+
+  /* Se o painel for um "card/painel" flutuante */
+  .hud, .painelAtleta, #painelAtleta, .panelAtleta {
+    width: min(92vw, 420px);
+    max-height: 72vh;
+    overflow: auto;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  /* Título do painel */
+  .hud h3, .painelAtleta h3, #painelAtleta h3, .panelAtleta h3,
+  .hud .title, .painelAtleta .title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  /* Área dos cards (medalhas/recordes/etc) */
+  .hudGrid, .painelGrid, .painelCards, .statsGrid, .hudStats {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 coluna no celular */
+    gap: 10px;
+  }
+
+  /* Cada card */
+  .hudCard, .statCard, .painelCard, .kpi {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  /* Número grande (ex: 2024, 7, etc) */
+  .hudCard strong, .statCard strong, .painelCard strong, .kpi strong,
+  .hudCard .num, .statCard .num, .kpi .num {
+    font-size: 22px;
+  }
+
+  /* Texto pequeno (labels) */
+  .hudCard span, .statCard span, .painelCard span, .kpi span,
+  .hudCard .label, .statCard .label, .kpi .label {
+    font-size: 13px;
+    opacity: .9;
+  }
+
+  /* Botões do painel */
+  .hud button, .painelAtleta button, #painelAtleta button, .panelAtleta button,
+  .hud .btn, .painelAtleta .btn {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+}
+
 .galleryActions{
   display: flex;
   justify-content: center;
@@ -978,3 +1033,4 @@ section h2::after{
 .card h3 {
   display: none;
 }
+
