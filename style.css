@@ -496,6 +496,56 @@ body.no-scroll{overflow:hidden;}
 }
 /* ===== MOBILE: Painel do Atleta ===== */
 @media (max-width: 600px){
+  /* =========================
+   MOBILE – PAINEL DO ATLETA
+   ========================= */
+@media (max-width: 480px) {
+
+  .painelAtleta {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .painelAtleta h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .painelGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .painelCard {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .painelCard span {
+    font-size: 0.8rem;
+  }
+
+  .painelCard strong {
+    font-size: 1.4rem;
+  }
+
+  .painelBotoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .painelBotoes button,
+  .painelBotoes a {
+    padding: 12px;
+    font-size: 0.95rem;
+    border-radius: 14px;
+  }
+}
+
 
   /* Se o painel for um "card/painel" flutuante */
   .hud, .painelAtleta, #painelAtleta, .panelAtleta {
@@ -1033,4 +1083,5 @@ section h2::after{
 .card h3 {
   display: none;
 }
+
 
