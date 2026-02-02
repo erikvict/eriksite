@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Erik Victor | Atletismo 🏆</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<!-- 🧠 MINI HUD ESPORTIVO -->
+<div class="hud" id="hud">
+  <div class="hudHead">
+    <div class="hudTitle">🏃‍♂️ Painel do Atleta</div>
+    <button class="hudBtn" id="hudToggle" type="button" title="Minimizar">➖</button>
+  </div>
+
+  <div class="hudGrid" id="hudGrid">
+    <div class="hudCard">
+      <div class="hudLabel">🥇 Medalhas</div>
+      <div class="hudValue" id="hudMedalhas">--</div>
+    </div>
+
+    <div class="hudCard">
+      <div class="hudLabel">🎯 Recordes</div>
+      <div class="hudValue" id="hudRecordes">--</div>
+    </div>
+
+    <div class="hudCard">
+      <div class="hudLabel">📈 Melhor ano</div>
+      <div class="hudValue" id="hudMelhorAno">--</div>
+    </div>
+
+    <div class="hudCard">
+      <div class="hudLabel">🔥 Prova foco</div>
+      <div class="hudValue" id="hudProva">Dardo</div>
+    </div>
+
+    <button class="hudAction" id="btnIrGrafico" type="button">📊 Ver evolução</button>
+    <button class="hudAction" id="btnIrGaleria" type="button">📷 Ir pra galeria</button>
+  </div>
+</div>
+
+
+  <header class="hero">
+  <div class="heroBg"></div>
+
+  <div class="heroContent">
+    <span class="heroTag">🏃‍♂️ PARATLETA BRASILEIRO</span>
+
+    <h1 class="heroTitle">
+      Erik Victor <br>
+      <span>Atletismo de Alto Rendimento</span>
+    </h1>
+
+    <p class="heroDesc">
+      Arremesso de peso • Lançamento de dardo • Lançamento de disco
+    </p>
+
+    <div class="heroStats">
+      <div><b>7+</b><span>Recordes</span></div>
+      <div><b>🥇</b><span>Títulos nacionais</span></div>
+      <div><b>5</b><span>Anos competindo</span></div>
+    </div>
+
+    <div class="heroActions">
+      <a href="#timeline" class="btn primary">📅 Minha trajetória</a>
+      <a href="#gallery" class="btn ghost">📸 Ver conquistas</a>
+    </div>
+  </div>
+</header>
+
+
+<section id="pbs" class="pbs">
+  <div class="pbsHead">
+    <h2>📊 Top Marcas (PBs)</h2>
+    <p class="muted">Minhas melhores marcas pessoais oficiais</p>
+  </div>
+
+  <div class="pbsList">
+    <!-- PESO -->
+    <div class="pbItem">
+      <div class="pbTop">
+        <span class="pbIcon">🏋️</span>
+        <span class="pbName">Arremesso de peso</span>
+        <span class="pbValue"><b data-pb="7.84">7.84</b> m</span>
+      </div>
+      <div class="pbBar">
+        <div class="pbFill" data-pb="7.84" data-max="10"></div>
+      </div>
+      <p class="muted small">PB em 2025 • evolução +25,8%</p>
+    </div>
+
+    <!-- DARDO -->
+    <div class="pbItem">
+      <div class="pbTop">
+        <span class="pbIcon">🎯</span>
+        <span class="pbName">Lançamento de dardo</span>
+        <span class="pbValue"><b data-pb="23.77">23.77</b> m</span>
+      </div>
+      <div class="pbBar">
+        <div class="pbFill" data-pb="23.77" data-max="30"></div>
+      </div>
+      <p class="muted small">PB em 2025 • melhor prova • top 5 nacional</p>
+    </div>
+
+    <!-- DISCO -->
+    <div class="pbItem">
+      <div class="pbTop">
+        <span class="pbIcon">💿</span>
+        <span class="pbName">Lançamento de disco</span>
+        <span class="pbValue"><b data-pb="22.11">22.11</b> m</span>
+      </div>
+      <div class="pbBar">
+        <div class="pbFill" data-pb="22.11" data-max="30"></div>
+      </div>
+      <p class="muted small">PB em 2025 • maior evolução percentual (+45,7%)</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="growth" class="growth">
+  <div class="growthHead">
+    <h2>⚡ Crescimento percentual</h2>
+    <p class="muted">Comparação do progresso de 2023 → 2025</p>
+  </div>
+
+  <div class="growthGrid">
+    <div class="gCard" data-pct="25.8">
+      <div class="gTop">
+        <span class="gIcon">🏋️</span>
+        <span class="gName">Arremesso de peso</span>
+        <span class="gPct"><b class="gNum" data-to="25.8">0</b>%</span>
+      </div>
+      <div class="gBar"><div class="gFill"></div></div>
+      <div class="gSub muted small">6,23 m → 7,84 m</div>
+    </div>
+
+    <div class="gCard" data-pct="40.5">
+      <div class="gTop">
+        <span class="gIcon">🎯</span>
+        <span class="gName">Lançamento de dardo</span>
+        <span class="gPct"><b class="gNum" data-to="40.5">0</b>%</span>
+      </div>
+      <div class="gBar"><div class="gFill"></div></div>
+      <div class="gSub muted small">18,90 m → 23,77 m</div>
+    </div>
+
+    <div class="gCard" data-pct="45.7">
+      <div class="gTop">
+        <span class="gIcon">💿</span>
+        <span class="gName">Lançamento de disco</span>
+        <span class="gPct"><b class="gNum" data-to="45.7">0</b>%</span>
+      </div>
+      <div class="gBar"><div class="gFill"></div></div>
+      <div class="gSub muted small">15,17 m → 22,11 m</div>
+    </div>
+  </div>
+</section>
+
+
+<section id="evolution" class="evolution">
+  <div class="evoHead">
+    <h2>📈 Evolução das marcas</h2>
+    <p class="muted">Crescimento anual nas provas principais</p>
+  </div>
+
+  <div class="evoBox">
+    <canvas id="evoChart" width="900" height="420"></canvas>
+  </div>
+
+  <p class="muted small center">
+    Dados oficiais até 2025
+  </p>
+</section>
+
+
+<section id="numbers" class="numbers">
+  <div class="numbersHead">
+    <h2>🔥 Conquistas em números</h2>
+    <p class="muted">Resultados e marcos da minha trajetória no atletismo 🏃‍♂️</p>
+  </div>
+
+  <div class="numbersGrid">
+    <div class="numCard">
+      <div class="numIcon">🥇</div>
+      <div class="numValue" data-count="26">0</div>
+      <div class="numLabel">Medalhas de ouro</div>
+    </div>
+
+    <div class="numCard">
+      <div class="numIcon">🏆</div>
+      <div class="numValue" data-count="7">0</div>
+      <div class="numLabel">Recordes quebrados</div>
+    </div>
+
+    <div class="numCard">
+      <div class="numIcon">✈️</div>
+      <div class="numValue" data-count="9">0</div>
+      <div class="numLabel">Viagens/competições fora</div>
+    </div>
+  </div>
+
+  <p class="muted small center">
+    Dica: você pode editar os números depois no próprio HTML 😄
+  </p>
+</section>
+
+
+<section>
+  <div class="card">
+  <h2>🎯 MiniJogo: Arremesso</h2>
+  <p class="muted">Arrasta pra trás e solta. Treina ângulo + força e tenta bater seu recorde 🥇</p>
+  <button class="btn" id="openGame">Jogar agora 🚀</button>
+</div>
+
+<!-- Modal do jogo -->
+<div id="gameModal" class="gameModal" aria-hidden="true">
+  <div class="gameBox" role="dialog" aria-modal="true" aria-label="MiniJogo de arremesso">
+    <div class="gameTop">
+      <div class="title">🎯 MiniJogo de Arremesso</div>
+      <button class="close" id="closeGame" type="button">Fechar ✖</button>
+    </div>
+
+    <div class="gameBody">
+      <canvas id="gameCanvas" width="900" height="420"></canvas>
+
+      <div class="gameHUD">
+        <div class="hudRow">
+          <div>🌬️ Vento: <b id="windVal">0.0</b></div>
+          <div>📐 Ângulo: <b id="angleVal">0</b>°</div>
+          <div>💥 Força: <b id="powerVal">0</b>%</div>
+        </div>
+
+        <div class="hudRow">
+          <div>📏 Distância: <b id="distVal">0.0</b> m</div>
+          <div>🥇 Recorde: <b id="bestVal">0.0</b> m</div>
+        </div>
+
+        <div class="hudRow">
+          <button class="btn" id="resetGame">Novo arremesso 🔁</button>
+          <button class="btn ghost" id="newWind">Trocar vento 🌬️</button>
+        </div>
+
+        <p class="muted small">Dica: no celular, arrasta e solta do mesmo jeito 👆</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <h2>Minha Trajetória 🔥</h2>
+
+  <div class="card">
+    <h3>2021 🟢</h3>
+    <p>Primeiro dia de treino com o treinador Ismael Marques.</p>
+    <p>🏁 Primeira competição: Jogos Paralímpicos do Recife.</p>
+    <p>🥇🥇🥇 Ouro no peso, dardo e disco.</p>
+  </div>
+
+  <div class="card">
+    <h3>2022 🟡</h3>
+    <p>Paralimpíadas Escolares – Natal.</p>
+    <p>🥇 Peso (7,11m) • 🥇 Pelota (21,33m)</p>
+    <p>Fase Nacional – São Paulo: 🥇 Ouro no peso + 🏆 recorde na pelota.</p>
+  </div>
+
+  <div class="card">
+    <h3>2023 🔵</h3>
+    <p>🏅 Prêmio Melhores Atletas de Pernambuco (14 anos).</p>
+  </div>
+
+  <div class="card">
+    <h3>2024 🟣</h3>
+    <p>Fase Nacional – São Paulo.</p>
+    <p>🥇🥇🥇 Ouro nas 3 provas.</p>
+    <p>🏆 Recordes no peso e no dardo.</p>
+  </div>
+
+  <div class="card">
+    <h3>2025 🔴</h3>
+    <p>Escolar Regional – Recife.</p>
+    <p>🥇🥇🥇 Ouro no peso, dardo e disco.</p>
+  </div>
+
+  <div class="card">
+    <h3>Conquistas 🏆</h3>
+    <p>🥇 Tri campeão brasileiro (Sub-17 e Sub-20)</p>
+    <p>🥇 Tetra campeão escolar</p>
+    <p>🏆 7 recordes (escolar e brasileiros de jovens)</p>
+  </div>
+
+  <div class="card galleryWrap">
+    <div class="galleryHeader">
+      <h3>Galeria 📸</h3>
+      <p>Clique numa foto pra abrir em tela cheia. Use ESC pra fechar.</p>
+    </div>
+<div class="galleryActions">
+  <button id="showAll" class="btn ghost" style="display:none">
+    🔄 Mostrar todas as fotos
+  </button>
+</div>
+
+    <div class="gallery" id="gallery">
+      <!-- Troque os caminhos se seus nomes forem diferentes -->
+      <div class="gItem" data-year="2021" data-title="Primeiro treino" data-desc="Primeiro dia de treinamento com o treinador Ismael Marques 🤝" data-src="imagens/2021/IMG_2515.png">
+        <img src="imagens/2021/IMG_2515.png" alt="Primeiro treino 2021">
+        <div class="gCap"></div>
+      </div>
+
+      <div class="gItem" data-year="2021" data-title="Primeira competição" data-desc="Jogos Paralímpicos do Recife: 3 ouros nas 3 provas 🥇🥇🥇" data-src="imagens/2021/IMG_2521.png">
+        <img src="imagens/2021/IMG_2521.png" alt="Jogos Paralímpicos do Recife 2021">
+        <div class="gCap"></div>
+      </div>
+
+      <div class="gItem" data-year="2022" data-title="Natal" data-desc="Primeiro escolar: ouro no peso e ouro na pelota 🥇🥇" data-src="imagens/2022/IMG_2513.png">
+        <img src="imagens/2022/IMG_2513.png" alt="Escolar Natal 2022">
+        <div class="gCap"></div>
+      </div>
+
+      <div class="gItem" data-year="2022" data-title="São Paulo (Nacional)" data-desc="Ouro no peso + recorde na pelota 🥇🏆" data-src="imagens/2022/IMG_2516.png">
+        <img src="imagens/2022/IMG_2516.png" alt="Nacional São Paulo 2022">
+        <div class="gCap"></div>
+      </div>
+
+      <div class="gItem" data-year="2023" data-title="Prêmio" data-desc="Paratleta Destaque: Melhores Atletas de Pernambuco 🏆" data-src="imagens/2023/IMG_2506.png">
+        <img src="imagens/2023/IMG_2506.png" alt="Prêmio 2023">
+        <div class="gCap"></div>
+      </div>
+
+      <div class="gItem" data-year="2024" data-title="Recife (Regional)" data-desc="3 ouros nas 3 provas 🥇🥇🥇" data-src="imagens/2024/IMG_2511.png">
+        <img src="imagens/2024/IMG_2511.png" alt="Recife 2024 regional">
+        <div class="gCap"></div>
+      </div>
+
+      <div class="gItem" data-year="2024" data-title="São Paulo (Nacional)" data-desc="Ouro nas 3 provas + recordes no peso e dardo 🥇🥇🥇🏆🏆" data-src="imagens/2024/IMG_2522.png">
+        <img src="imagens/2024/IMG_2522.png" alt="Nacional São Paulo 2024">
+        <div class="gCap"></div>
+      </div>
+
+      <div class="gItem" data-year="2025" data-title="Recife Open • Dardo" data-desc="Ouro + bronze no dardo 🥇🥉🎯" data-src="imagens/2025/IMG_2505.png">
+        <img src="imagens/2025/IMG_2505.png" alt="Recife Open dardo">
+        <div class="gCap"></div>
+      </div>
+
+      <div class="gItem" data-year="2025" data-title="Recife (Regional)" data-desc="3 ouros nas 3 provas 🥇🥇🥇" data-src="imagens/2025/IMG_2507.png">
+        <img src="imagens/2025/IMG_2507.png" alt="Recife 2025 pódio">
+        <div class="gCap"></div>
+      </div>
+
+      <div class="gItem" data-year="2025" data-title="Dardo em ação" data-desc="Execução no lançamento de dardo 🎯" data-src="imagens/2025/IMG_2508.png">
+        <img src="imagens/2025/IMG_2508.png" alt="Dardo em ação 2025">
+        <div class="gCap"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 • Site pessoal de Erik Victor • feito pra clicar 😄🔥</p>
+</footer>
+
+<!-- Modal -->
+<div id="modal" aria-hidden="true">
+  <div class="modalBox" role="dialog" aria-modal="true" aria-label="Visualizador de fotos">
+    <div class="modalTop">
+      <div class="title" id="mTitle">Foto</div>
+      <button class="close" id="mClose" type="button">Fechar ✕</button>
+    </div>
+    <div class="modalBody">
+      <img id="mImg" src="" alt="">
+      <div class="modalInfo">
+        <div id="mDesc" class="muted"></div>
+        <div class="modalNav">
+          <button class="navBtn" id="prevBtn" type="button">◀ Anterior</button>
+          <button class="navBtn" id="nextBtn" type="button">Próxima ▶</button>
+        </div>
+        <p class="muted" style="margin-top:10px;">Dica: setas do teclado também funcionam ⬅️➡️</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const items = Array.from(document.querySelectorAll(".gItem"));
+// ✅ Legendas automáticas por ano
+items.forEach((it) => {
+  const year = it.dataset.year?.trim();
+  const title = it.dataset.title?.trim() || "Foto";
+  const cap = it.querySelector(".gCap");
+
+
+  if (cap && year) {
+    cap.textContent = `${year} • ${title}`;
+  }
+
+  // Opcional: se data-title estiver vazio mas tiver legenda antiga no HTML
+  // você pode deixar como fallback
+});
+
+const modal = document.getElementById("modal");
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+const mImg = document.getElementById("mImg");
+const mTitle = document.getElementById("mTitle");
+const mDesc = document.getElementById("mDesc");
+const mClose = document.getElementById("mClose");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let currentIndex = 0;
+
+function openModal(index){
+  currentIndex = index;
+  const it = items[currentIndex];
+  mImg.src = it.dataset.src;
+  mImg.alt = it.querySelector("img")?.alt || "Foto";
+  mTitle.textContent = it.dataset.title || "Foto";
+  mDesc.textContent = it.dataset.desc || "";
+  modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+  modal.setAttribute("aria-hidden", "false");
+}
+
+function closeModal(){
+  modal.style.display = "none";
+  document.body.style.overflow = "";
+  modal.setAttribute("aria-hidden", "true");
+  mImg.src = "";
+}
+
+function next(){
+  openModal((currentIndex + 1) % items.length);
+}
+
+function prev(){
+  openModal((currentIndex - 1 + items.length) % items.length);
+}
+
+items.forEach((it, idx) => it.addEventListener("click", () => openModal(idx)));
+mClose.addEventListener("click", closeModal);
+modal.addEventListener("click", (e) => { if(e.target === modal) closeModal(); });
+nextBtn.addEventListener("click", next);
+prevBtn.addEventListener("click", prev);
+
+document.addEventListener("keydown", (e) => {
+  // ===== Swipe no celular (no modal) =====
+let startX = 0;
+
+modal.addEventListener("touchstart", (e) => {
+  if (!modal.classList.contains("isOpen")) return;
+  startX = e.touches[0].clientX;
+}, { passive: true });
+
+modal.addEventListener("touchend", (e) => {
+  if (!modal.classList.contains("isOpen")) return;
+
+  const endX = e.changedTouches[0].clientX;
+  const diff = endX - startX;
+
+  if (Math.abs(diff) < 50) return; // sensibilidade
+
+  if (diff > 0) {
+    openModal((currentIndex - 1 + items.length) % items.length); // swipe direita = volta
+  } else {
+    openModal((currentIndex + 1) % items.length); // swipe esquerda = próxima
+  }
+}, { passive: true });
+
+  if(modal.getAttribute("aria-hidden") === "true") return;
+  if(e.key === "Escape") closeModal();
+  if(e.key === "ArrowRight") next();
+  if(e.key === "ArrowLeft") prev();
+});
+</script>
+<script src="./script.js"></script>
+</body>
+</section>
+</html>
