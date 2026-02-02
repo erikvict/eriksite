@@ -495,7 +495,7 @@ body.no-scroll{overflow:hidden;}
   .tlPhotos{ grid-template-columns: repeat(2, 1fr); }
 }
 /* ===== MOBILE: Painel do Atleta ===== */
-@media (max-width: 600px){
+@media (max-width: 480px){
   /* =========================
    MOBILE – PAINEL DO ATLETA
    ========================= */
@@ -1083,5 +1083,6 @@ section h2::after{
 .card h3 {
   display: none;
 }
+
 
 
